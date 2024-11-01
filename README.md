@@ -1,0 +1,3 @@
+# `recognizer`
+
+> PDF data extraction

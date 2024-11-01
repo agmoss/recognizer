@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "recognizer"
+version = "1.0.0"
+description = "PDF data extraction"
+authors = ["Andrew Moss <andrew@m0ss.dev>"]
+readme = "README.md"
+packages = [{include = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pandas = "^2.2.2"
+azure-ai-documentintelligence = "^1.0.0b4"
+azure-ai-formrecognizer = "^3.3.3"
+
+[tool.poetry.group.dev.dependencies]
+astroid = "^3.0.1"
+black = "^24.2.0"
+git-changelog = "^2.0.0"
+isort = "^5.12.0"
+mypy = "^1.8.0"
+mypy-extensions = "^1.0.0"
+pre-commit = "^3.3.3"
+pylint = "^3.0.3"
+pytest = "^8.0.0"
+python-dotenv = "^1.0.1"
+
+[tool.poetry.scripts]
+main= 'src.main:main'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
