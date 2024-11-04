@@ -25,7 +25,8 @@ pytest = "^8.0.0"
 python-dotenv = "^1.0.1"
 
 [tool.poetry.scripts]
-main= 'src.main:main'
+model= 'src.model:main'
+etl= 'src.etl:main'
 
 [build-system]
 requires = ["poetry-core"]
